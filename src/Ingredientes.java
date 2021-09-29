@@ -15,4 +15,11 @@ public class Ingredientes {
         this.nomeDoIngrediente = nomeDoIngrediente;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder retornar = new StringBuilder();
+        retornar.append(nomeDoIngrediente);
+        return retornar.toString();
+    }
+
 }

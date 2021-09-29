@@ -19,4 +19,12 @@ public class Cardapio {
         this.pratos = pratos;
     }
 
+    @Override
+    public String toString(){
+        StringBuilder retornar = new StringBuilder();
+        retornar.append("Quantidade de pratos do dia: " + pratos.size());
+        retornar.append("\n Os pratos são: " + pratos);
+        return retornar.toString();
+    }
+
 }

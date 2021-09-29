@@ -19,6 +19,11 @@ public class Cardapio {
         this.pratos = pratos;
     }
 
+    //Método para inclusão de pratos no cardapio
+    public void adicionarPratos(Prato pratosDoCardapio){
+        pratos.add(pratosDoCardapio);
+    }
+
     @Override
     public String toString(){
         StringBuilder retornar = new StringBuilder();

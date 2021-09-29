@@ -43,7 +43,8 @@ public class Sistema {
     //Método para apresentar o Menu
     public static void menu() {
         System.out.println("Digite 1 para adicionar um prato; ");
-        System.out.println("Digite 2 para mostrar o prato; ");
+        System.out.println("2 - Exibir cardápio; ");
+        System.out.println("3 - Sair.");
     }
 
     public static void executarMenu() {
@@ -56,7 +57,15 @@ public class Sistema {
                 cardapio.adicionarPratos(criarPrato());
             } else if (escolhaMenu == 2) {
                 System.out.println(cardapio);
+            } else if (escolhaMenu == 2) {
+                System.out.println(cardapio);
+            } else if (escolhaMenu == 3) {
+                opcaoDoMenu = false;
+            }
+            else {
+                System.out.println("Opção inválida!");
             }
         }
+        }
     }
-}
+

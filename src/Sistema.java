@@ -23,7 +23,7 @@ public class Sistema {
 
     //Método para criar um ingrediente
     public static Ingredientes novoIngrediente() {
-        String nomeDoIngrediente = capturarDados("Digite o nome do ingrediente: ").nextLine();
+        String nomeDoIngrediente = capturarDados("Digite o ingrediente: ").nextLine();
         Ingredientes ingredienteAdicionado = new Ingredientes();
         ingredienteAdicionado.setNomeDoIngrediente(nomeDoIngrediente);
         return ingredienteAdicionado;
@@ -42,9 +42,10 @@ public class Sistema {
 
     //Método para apresentar o Menu
     public static void menu() {
+        System.out.println("\n\t Bem vinde ao restaurante FOGO PRIMITIVO \n");
         System.out.println("Digite 1 para adicionar um prato; ");
-        System.out.println("2 - Exibir cardápio; ");
-        System.out.println("3 - Sair.");
+        System.out.println("Digite 2 para exibir cardápio; ");
+        System.out.println("Digite 3 para Sair.\n");
     }
 
     public static void executarMenu() {

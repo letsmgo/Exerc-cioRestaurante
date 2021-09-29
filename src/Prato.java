@@ -52,9 +52,9 @@ public class Prato {
     @Override
     public String toString() {
         StringBuilder retornar = new StringBuilder();
-        retornar.append("Nome do prato: " + nomeDoPrato +"\n");
-        retornar.append("Valor do prato: R$" + vlrDoPrato + "\n");
-        retornar.append("Ingredientes: " + ingredientes + "\n");
+        retornar.append("\t Nome do prato: " + nomeDoPrato +"\n");
+        retornar.append("\t Valor do prato: R$" + vlrDoPrato + "\n");
+        retornar.append("\t Ingredientes: " + ingredientes + "\n");
         return retornar.toString();
     }
 }

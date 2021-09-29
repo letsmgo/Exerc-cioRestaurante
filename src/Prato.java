@@ -43,6 +43,12 @@ public class Prato {
         this.vlrDoPrato = vlrDoPrato;
     }
 
+    //-----------------------------------------------------------------------------------------------------
+    //Método para adicionar ingredientes nos pratos
+    public void adicionarIngredientes(Ingredientes ingredientesDoPrato) {
+        ingredientes.add(ingredientesDoPrato);
+    }
+
     @Override
     public String toString() {
         StringBuilder retornar = new StringBuilder();
